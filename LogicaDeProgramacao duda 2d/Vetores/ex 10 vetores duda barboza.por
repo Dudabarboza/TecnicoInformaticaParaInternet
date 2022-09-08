@@ -15,7 +15,7 @@ programa
 	funcao inicio()
 	{
 		real preco[10], qntVendida[10], totalVendas, valorGeral = 0.0
-		real comissao, maisVendido = 0.0
+		real comissao, maisVendido = 0
 		inteiro i = 0, ind = 0
 
 		para(i = 0; i < 10; i++){
@@ -27,7 +27,7 @@ programa
 			}
 		para(i = 0; i <10; i++){
 				totalVendas = qntVendida[i] * preco[i]
-				escreva("\nQuantidade de itens vendidos: ",qntVendida[i],"\n O preço do produto: R$",preco[i], "\nTotal de vendas desse produto: R$",totalVendas)
+				escreva("\nQuantidade vendida: ",qntVendida[i],"\n O preço do produto: R$",preco[i], "\nTotal de vendas desse produto: R$",totalVendas)
 				valorGeral =  totalVendas + valorGeral
 				
 				
@@ -55,7 +55,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1268; 
+ * @POSICAO-CURSOR = 1694; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {preco, 17, 7, 5}-{qntVendida, 17, 18, 10};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
